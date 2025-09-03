@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default function Perfil() {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.text}>Tela de Perfil</Text>
+        <Icon name="person" size={50} color="#fff" />
       </TouchableOpacity>
     </View>
   );
@@ -14,18 +15,20 @@ export default function Perfil() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffffff',
   },
   button: {
-    padding: 12,
+    padding: 10,
     backgroundColor: '#007bff',
     borderRadius: 70,
     alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 10,
     width: 140,
     height: 140,
+    
   },
   text: {
     fontSize: 24,

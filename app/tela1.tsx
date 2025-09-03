@@ -58,7 +58,7 @@ export default function BottomIconBar() {
 const styles = StyleSheet.create({
   containerPrincipal: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#fff', // cor de fundo
     paddingTop: 20,
     paddingBottom: 80, // espaço para a barra fixa embaixo
   },
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   categoriaButton: {
-    width: '70%',               // controla a largura dos botões de categoria
-    backgroundColor: '#eee',
+    width: '57%',               // controla a largura dos botões de categoria
+    backgroundColor: '#eee', // cor de fundo
     paddingVertical: 15,
     marginVertical: 10,         // espaçamento entre botões
     borderRadius: 8,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     shadowColor: '#000',        // sombra iOS
     shadowOpacity: 0.1,
     shadowRadius: 3,
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 2, height: 7 },
     height: 100, // altura fixa para os botões de categoria
     justifyContent: 'center', // centraliza verticalmente
   },
